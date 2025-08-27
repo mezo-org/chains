@@ -1,0 +1,39 @@
+{
+  "name": "@mezo-org/chains",
+  "version": "0.0.1",
+  "description": "Mezo chain configuration for Viem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "viem",
+    "chain",
+    "mezo",
+    "bitcoin"
+  ],
+  "author": "Jakub Nowakowski <jakub.nowakowski@mezo.org>",
+  "files": [
+    "dist/**/*"
+  ],
+  "peerDependencies": {
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "@thesis-co/eslint-config": "^0.6.1",
+    "@thesis/prettier-config": "github:thesis/prettier-config",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.0.0",
+    "viem": "^2.0.0",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
+}
