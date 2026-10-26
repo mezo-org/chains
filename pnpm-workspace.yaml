@@ -1,0 +1,4 @@
+# pnpm 11 fails the install when a dependency has a build script that isn't
+# listed here. The value matches web's list for the same package.
+allowBuilds:
+  esbuild: true
